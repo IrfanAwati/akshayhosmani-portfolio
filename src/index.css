@@ -541,8 +541,8 @@ ol {
   color: var(--green);
 }
 .k-views {
-  left: -9%;
-  bottom: 28%;
+  left: -10%;
+  top: 60%;
   width: 215px;
 }
 .kpi-line {
@@ -551,8 +551,8 @@ ol {
   margin-top: 6px;
 }
 .k-dash {
-  right: -7%;
-  top: 40%;
+  right: -8%;
+  top: 64%;
 }
 .kpi-bars {
   width: 120px;
@@ -560,8 +560,8 @@ ol {
   margin-top: 8px;
 }
 .k-yrs {
-  right: 6%;
-  bottom: 3%;
+  right: -6%;
+  top: -11%;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -1359,14 +1359,15 @@ ol {
   }
   .k-dash {
     right: -2%;
-    top: 54%;
+    top: 66%;
   }
   .kpi-bars {
     width: 90px;
     height: 28px;
   }
   .k-yrs {
-    right: 0;
+    right: -2%;
+    top: -17%;
   }
   .ring {
     width: 40px;
