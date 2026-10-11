@@ -7,6 +7,7 @@ export function Contact() {
     { label: 'Email', value: profile.email, href: `mailto:${profile.email}`, Icon: icons.mail },
     { label: 'Phone', value: profile.phone, href: profile.phoneHref, Icon: icons.phone },
     { label: 'LinkedIn', value: 'akshay-hosamani', href: profile.linkedin, Icon: icons.linkedin },
+    { label: 'Instagram', value: profile.instagramHandle, href: profile.instagram, Icon: icons.instagram },
   ]
   return (
     <>

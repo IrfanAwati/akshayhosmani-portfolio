@@ -92,6 +92,40 @@ export const icons = {
       <path d="M6 11v5c2 2 10 2 12 0v-5M22 9v6" />
     </svg>
   ),
+  instagram: ({ size = 18, className }: P) => (
+    <svg {...base(size)} className={className}>
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" />
+    </svg>
+  ),
+  youtube: ({ size = 18, className }: P) => (
+    <svg {...base(size)} className={className}>
+      <rect x="2.5" y="5" width="19" height="14" rx="4" />
+      <path d="M10 9.2v5.6l5-2.8z" fill="currentColor" />
+    </svg>
+  ),
+  music: ({ size = 22, className }: P) => (
+    <svg {...base(size)} className={className}>
+      <path d="M14 4l6 6M17 7l-6.5 6.5" />
+      <path d="M10.5 13.5a4 4 0 10-1.2 4.9c.9-.7 1.7-1.8 1.9-3" />
+      <circle cx="7.6" cy="15.6" r="1.2" />
+    </svg>
+  ),
+  moto: ({ size = 22, className }: P) => (
+    <svg {...base(size)} className={className}>
+      <circle cx="5.5" cy="16.5" r="3.5" />
+      <circle cx="18.5" cy="16.5" r="3.5" />
+      <path d="M5.5 16.5l4-6h5l4 6M14.5 10.5L13 6h3M9.5 10.5l3 6" />
+    </svg>
+  ),
+  events: ({ size = 22, className }: P) => (
+    <svg {...base(size)} className={className}>
+      <rect x="3" y="5" width="18" height="16" rx="3" />
+      <path d="M3 10h18M8 3v4M16 3v4" />
+      <path d="M12 13l1 2 2.2.3-1.6 1.5.4 2.2-2-1-2 1 .4-2.2-1.6-1.5 2.2-.3z" />
+    </svg>
+  ),
   spark: ({ size = 14, className }: P) => (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className={className}>
       <path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z" />

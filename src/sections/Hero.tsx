@@ -98,7 +98,7 @@ export function Hero() {
           {imgOk ? (
             <img
               src={profile.images.hero}
-              alt={`Portrait of ${profile.first} ${profile.last}`}
+              alt={`Professional portrait of ${profile.first} ${profile.last} in a charcoal suit and white shirt (AI-enhanced from his photos)`}
               onError={() => setImgOk(false)}
               fetchPriority="high"
             />

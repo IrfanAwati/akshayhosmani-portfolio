@@ -474,7 +474,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: 50% 18%;
 }
 .portrait::after {
   content: '';
@@ -541,8 +541,8 @@ ol {
   color: var(--green);
 }
 .k-views {
-  left: -4%;
-  top: 8%;
+  left: -9%;
+  bottom: 28%;
   width: 215px;
 }
 .kpi-line {
@@ -551,8 +551,8 @@ ol {
   margin-top: 6px;
 }
 .k-dash {
-  right: -4%;
-  top: 24%;
+  right: -7%;
+  top: 40%;
 }
 .kpi-bars {
   width: 120px;
@@ -560,8 +560,8 @@ ol {
   margin-top: 8px;
 }
 .k-yrs {
-  right: 2%;
-  bottom: 10%;
+  right: 6%;
+  bottom: 3%;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -1359,6 +1359,7 @@ ol {
   }
   .k-dash {
     right: -2%;
+    top: 54%;
   }
   .kpi-bars {
     width: 90px;
@@ -1414,5 +1415,188 @@ ol {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
+  }
+}
+
+/* ---------- beyond the dashboard ---------- */
+.beyond-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+.stage {
+  position: relative;
+  min-height: 520px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--line-2);
+  box-shadow: 0 40px 100px -40px rgba(124, 58, 237, 0.7);
+}
+.stage img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 45% 30%;
+}
+.stage-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 6, 13, 0.55), transparent 30%, transparent 50%, rgba(7, 6, 13, 0.92)),
+    linear-gradient(90deg, rgba(76, 29, 149, 0.25), transparent 60%);
+}
+.ig-badge {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px 10px 10px;
+  border-radius: 14px;
+  transition: transform 0.4s var(--ease);
+}
+.ig-badge:hover {
+  transform: translateY(-2px);
+}
+.ig-badge b {
+  display: block;
+  font-size: 14px;
+}
+.ig-badge small {
+  display: block;
+  font-size: 11.5px;
+  color: var(--ink-3);
+}
+.ig-orb {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  color: #fff;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+.stage-quote {
+  position: absolute;
+  left: 24px;
+  right: 90px;
+  bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.stage-quote span {
+  font-family: var(--display);
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+.stage-quote small {
+  font-size: 12.5px;
+  color: var(--ink-3);
+}
+.eq {
+  position: absolute;
+  right: 24px;
+  bottom: 28px;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 34px;
+}
+.eq i {
+  width: 5px;
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #e879f9, #8b5cf6);
+  transform-origin: bottom;
+  animation: eq 0.9s ease-in-out infinite alternate;
+}
+@keyframes eq {
+  from {
+    transform: scaleY(0.25);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+.beyond-side {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.bio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.bio-tags span {
+  font-size: 13px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--line-2);
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--lilac);
+}
+.act {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+}
+.act h3 {
+  font-size: 17.5px;
+  margin-bottom: 6px;
+}
+.act p {
+  font-size: 14.5px;
+  color: var(--ink-2);
+}
+.act-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--violet-hi);
+}
+.act-link:hover {
+  color: var(--lilac);
+}
+.beyond-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 4px;
+}
+.btn-ig {
+  color: #fff;
+  background: linear-gradient(120deg, #f58529, #dd2a7b 45%, #8134af 75%, #515bd4);
+  box-shadow: 0 10px 30px -10px rgba(221, 42, 123, 0.7);
+}
+@media (max-width: 900px) {
+  .beyond-grid {
+    grid-template-columns: 1fr;
+  }
+  .stage {
+    min-height: 420px;
+  }
+}
+@media (max-width: 600px) {
+  .stage {
+    min-height: 360px;
+  }
+  .stage-quote {
+    right: 70px;
+  }
+  .ig-badge {
+    top: auto;
+    bottom: 112px;
+    left: 14px;
   }
 }

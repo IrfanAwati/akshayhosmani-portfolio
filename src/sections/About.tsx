@@ -14,7 +14,7 @@ export function About() {
         <Reveal className="card about-main">
           <div className="about-photo">
             {imgOk ? (
-              <img src={profile.images.about} alt={`${profile.first} ${profile.last}`} loading="lazy" onError={() => setImgOk(false)} />
+              <img src={profile.images.about} alt={`${profile.first} relaxing in a black shirt with a cup of coffee (AI-enhanced from his photo)`} loading="lazy" onError={() => setImgOk(false)} />
             ) : (
               <span className="mono">AH</span>
             )}

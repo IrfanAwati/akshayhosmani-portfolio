@@ -2,6 +2,7 @@ import { MotionConfig } from 'motion/react'
 import { Nav } from './components/Nav'
 import { SmoothScroll } from './components/SmoothScroll'
 import { About } from './sections/About'
+import { Beyond } from './sections/Beyond'
 import { Contact } from './sections/Contact'
 import { Experience } from './sections/Experience'
 import { Hero } from './sections/Hero'
@@ -24,6 +25,7 @@ export default function App() {
         <Experience />
         <Skills />
         <About />
+        <Beyond />
         <Contact />
       </main>
     </MotionConfig>
