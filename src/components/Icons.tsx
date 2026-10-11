@@ -92,6 +92,11 @@ export const icons = {
       <path d="M6 11v5c2 2 10 2 12 0v-5M22 9v6" />
     </svg>
   ),
+  download: ({ size = 16, className }: P) => (
+    <svg {...base(size)} className={className} strokeWidth={2.2}>
+      <path d="M12 4v11M7 10l5 5 5-5M5 20h14" />
+    </svg>
+  ),
   instagram: ({ size = 18, className }: P) => (
     <svg {...base(size)} className={className}>
       <rect x="3" y="3" width="18" height="18" rx="5" />

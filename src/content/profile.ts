@@ -14,6 +14,7 @@ export const profile = {
   phone: '+91 73531 08897',
   phoneHref: 'tel:+917353108897',
   linkedin: 'https://www.linkedin.com/in/akshay-hosamani-86b566107',
+  cv: '/Akshay_Hosamani_CV.pdf',
   instagram: 'https://www.instagram.com/akshhosamani/',
   instagramHandle: '@akshhosamani',
   images: {

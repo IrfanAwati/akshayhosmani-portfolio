@@ -76,6 +76,9 @@ export function Hero() {
               <icons.out size={13} />
             </span>
           </a>
+          <a href={profile.cv} download className="btn btn-ghost btn-cv">
+            <icons.download /> Download CV
+          </a>
         </motion.div>
 
         <motion.div className="hero-meta" {...up(0.5)}>

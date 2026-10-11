@@ -21,9 +21,14 @@ export function Contact() {
               Need someone who turns data into <span className="grad">decisions?</span>
             </h2>
             <p>Business analysis, BI reporting, dashboards or sales analytics. Let's have a conversation.</p>
-            <a href={`mailto:${profile.email}`} className="btn btn-primary btn-lg">
-              Say hello <icons.arrow />
-            </a>
+            <div className="cta-btns">
+              <a href={`mailto:${profile.email}`} className="btn btn-primary btn-lg">
+                Say hello <icons.arrow />
+              </a>
+              <a href={profile.cv} download className="btn btn-ghost btn-lg btn-cv">
+                <icons.download /> Download CV
+              </a>
+            </div>
           </div>
           <ul className="channels">
             {channels.map(({ label, value, href, Icon }) => (

@@ -193,6 +193,14 @@ ol {
   padding: 16px 28px;
   font-size: 16px;
 }
+.btn-cv:hover > svg {
+  transform: translateY(2px);
+}
+.cta-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
 .pill {
   display: inline-flex;
   align-items: center;
